@@ -1,0 +1,14 @@
+{
+  "name": "imports-and-requires",
+  "version": "1.0.0",
+  "description": "Converts import to require statements and vice versa",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": ["import", "require", "convert", "statement"],
+  "author": "Galib Hassan",
+  "license": "MIT",
+  "dependencies": {
+    "espree": "^3.5.4"
+  }, 
+  "homepage": ""
+}
