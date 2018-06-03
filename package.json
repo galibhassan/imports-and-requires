@@ -1,6 +1,6 @@
 {
   "name": "imports-and-requires",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts import to require statements and vice versa",
   "main": "index.js",
   "scripts": {},

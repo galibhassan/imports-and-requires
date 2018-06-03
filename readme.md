@@ -7,7 +7,7 @@ A tiny tool which can
     npm install --save imports-and-requires
 ### Usage
 ```js
-const impReq = require('imports-and-requires') 
+const importsAndRequires = require('imports-and-requires') 
 ```
 
 ## API
@@ -18,7 +18,7 @@ const impReq = require('imports-and-requires')
   - Simple
     ```js
     var importStatement = `import Hogwarts from 'hogwarts'`;
-    var result = impReq.importToRequire(importStatement);
+    var result = importsAndRequires.importToRequire(importStatement);
     /*
      * result is a string:
      *  'const Hogwarts = require('hogwarts')'
@@ -28,7 +28,7 @@ const impReq = require('imports-and-requires')
   - Destructuring
     ```js
     var importStatement = `import { Harry, Hermione, Ron } from 'hogwarts'`;
-    var result = impReq.importToRequire(statement);
+    var result = importsAndRequires.importToRequire(importStatement);
     /*
      * result is the following array of require-strings:
      *  [ 
@@ -42,8 +42,8 @@ const impReq = require('imports-and-requires')
 - `requireToImport` : Function. Takes a Node.js compatible require-statement, returns an Es6 compatible import-statement.
   ### Example
   ```js
-    req = `const Hogwarts = require('hogwarts')`
-    result = requireToImport.requireToImport(req);
+    requireStatement  = `const Hogwarts = require('hogwarts')`
+    result = importsAndRequires.requireToImport(requireStatement);
     /*
      * result is a string:
      *  `import Hogwarts from 'hogwarts'`
@@ -52,7 +52,7 @@ const impReq = require('imports-and-requires')
 
   ```js
     requireStatement = `var Slytherin = require('hogwarts').Slytherin`
-    result = impReq.requireToImport(requireStatement);
+    result = importsAndRequires.requireToImport(requireStatement);
     /*
      * result is a string:
      *  `import Slytherin from 'hogwarts.Slytherin'
