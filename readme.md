@@ -40,6 +40,7 @@ const importsAndRequires = require('imports-and-requires')
     ```
 
 - `requireToImport` : Function. Takes a Node.js compatible require-statement, returns an Es6 compatible import-statement.
+
   ### Example
   ```js
     requireStatement  = `const Hogwarts = require('hogwarts')`
